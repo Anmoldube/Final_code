@@ -1,0 +1,179 @@
+🚀 Starting login attempt...
+js_primitives.dart:28 📧 Attempting login with email: test@gmail.com
+js_primitives.dart:28 🔐 Starting login process for: test@gmail.com
+js_primitives.dart:28 📡 Calling auth repository login...
+js_primitives.dart:28 🔗 AuthRepository: Making login API call...
+js_primitives.dart:28 🔄 Router redirect: location=/splash, isLoggedIn=false, isLoading=true
+js_primitives.dart:28 ⏳ Router: Auth loading, staying on current page
+js_primitives.dart:28 🔑 StorageService: Getting access token - found: false
+js_primitives.dart:28 *** Request ***
+js_primitives.dart:28 uri: http://192.168.1.6:5000/auth/login
+js_primitives.dart:28 method: POST
+js_primitives.dart:28 responseType: ResponseType.json
+js_primitives.dart:28 followRedirects: true
+js_primitives.dart:28 persistentConnection: true
+js_primitives.dart:28 connectTimeout: 0:00:30.000000
+js_primitives.dart:28 sendTimeout: 0:00:30.000000
+js_primitives.dart:28 receiveTimeout: 0:00:30.000000
+js_primitives.dart:28 receiveDataWhenStatusError: true
+js_primitives.dart:28 extra: {withCredentials: true}
+js_primitives.dart:28 headers:
+js_primitives.dart:28  Content-Type: application/json
+js_primitives.dart:28  Accept: application/json
+js_primitives.dart:28 data:
+js_primitives.dart:28 {userId: test@gmail.com, password: Aa123456}
+js_primitives.dart:28 
+js_primitives.dart:28 *** Response ***
+js_primitives.dart:28 uri: http://192.168.1.6:5000/auth/login
+js_primitives.dart:28 Response Text:
+js_primitives.dart:28 {"statusCode":"10000","message":"login successful","data":{"user":{"_id":"685cc3e923f843262956ffd9","username":"test","email":"test@gmail.com","avatarUrl":"https://s3bucket.bytenode.xyz/staticbucketstorage/public/images/avatar5.avif","statusMessage":"Available","roles":[{"code":"USER"}],"lastSeen":"2025-07-03T04:54:24.679Z","createdAt":"2025-06-26T03:52:09.282Z","updatedAt":"2025-07-03T04:54:24.679Z","__v":0},"tokens":{"accessToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ6ZW5jaGF0LmNvbSIsInN1YiI6IjY4NWNjM2U5MjNmODQzMjYyOTU2ZmZkOSIsImlzcyI6ImFwaS56ZW5jaGF0LmNvbSIsImlhdCI6MTc1MTYxMDk2NywiZXhwIjoxNzUxNzkzNzY3fQ.9xYhhPMcWGnO0Z50qZHg8pBo78ZuJfoUYM_qR5mX2eQ","refreshToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ6ZW5jaGF0LmNvbSIsInN1YiI6IjY4NWNjM2U5MjNmODQzMjYyOTU2ZmZkOSIsImlzcyI6ImFwaS56ZW5jaGF0LmNvbSIsImlhdCI6MTc1MTYxMDk2NywiZXhwIjoxNzUyMjE1NzY3fQ.6ZhIk8NpoerxLAC11IuzWtTg_P1NL98VjFCNMxJLVgU"}}}
+js_primitives.dart:28 
+js_primitives.dart:28 📡 AuthRepository: Response status: 200
+js_primitives.dart:28 📋 AuthRepository: Response data: {statusCode: 10000, message: login successful, data: {user: {_id: 685cc3e923f843262956ffd9, username: test, email: test@gmail.com, avatarUrl: https://s3bucket.bytenode.xyz/staticbucketstorage/public/images/avatar5.avif, statusMessage: Available, roles: [{code: USER}], lastSeen: 2025-07-03T04:54:24.679Z, createdAt: 2025-06-26T03:52:09.282Z, updatedAt: 2025-07-03T04:54:24.679Z, __v: 0}, tokens: {accessToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ6ZW5jaGF0LmNvbSIsInN1YiI6IjY4NWNjM2U5MjNmODQzMjYyOTU2ZmZkOSIsImlzcyI6ImFwaS56ZW5jaGF0LmNvbSIsImlhdCI6MTc1MTYxMDk2NywiZXhwIjoxNzUxNzkzNzY3fQ.9xYhhPMcWGnO0Z50qZHg8pBo78ZuJfoUYM_qR5mX2eQ, refreshToken: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJhdWQiOiJ6ZW5jaGF0LmNvbSIsInN1YiI6IjY4NWNjM2U5MjNmODQzMjYyOTU2ZmZkOSIsImlzcyI6ImFwaS56ZW5jaGF0LmNvbSIsImlhdCI6MTc1MTYxMDk2NywiZXhwIjoxNzUyMjE1NzY3fQ.6ZhIk8NpoerxLAC11IuzWtTg_P1NL98VjFCNMxJLVgU}}}
+js_primitives.dart:28 👤 AuthRepository: Parsing user data...
+js_primitives.dart:28 ✅ AuthRepository: Login successful, returning result
+js_primitives.dart:28 📋 Login result: success=true, user=test, token=present
+js_primitives.dart:28 💾 Saving tokens and user data...
+js_primitives.dart:28 ❌ Login error: TypeError: Cannot read properties of undefined (reading 'generateKey')
+js_primitives.dart:28 Stack trace: packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 195:188     <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 216:20      [_getEncryptionKey]
+packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 232:63      <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 247:20      write
+packages/flutter_secure_storage/flutter_secure_storage.dart.js 278:56              <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/flutter_secure_storage/flutter_secure_storage.dart.js 288:20              write
+packages/my_app/core/services/storage_service.dart.js 253:86                       <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/my_app/core/services/storage_service.dart.js 261:20                       saveAccessToken
+packages/my_app/features/auth/presentation/providers/auth_provider.dart.js 170:71  <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 503:7                 complete
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 570:12                _asyncReturn
+packages/my_app/features/auth/data/repositories/auth_repository.dart.js 182:28     <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 503:7                 complete
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 570:12                _asyncReturn
+packages/my_app/features/auth/data/datasources/auth_api_service.dart.js 70:28      <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 503:7                 complete
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 570:12                _asyncReturn
+packages/dio/src/interceptors/log.dart.js 1683:28                                  <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/async/future_impl.dart 807:7                                          callback
+dart-sdk/lib/async/schedule_microtask.dart 40:11                                   _microtaskLoop
+dart-sdk/lib/async/schedule_microtask.dart 49:5                                    _startMicrotaskLoop
+dart-sdk/lib/_internal/js_dev_runtime/private/ddc_runtime/operations.dart 117:77   tear
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 186:7                 <fn>
+
+js_primitives.dart:28 ❌ Login screen error: TypeError: Cannot read properties of undefined (reading 'generateKey')
+js_primitives.dart:28 Stack trace: packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 195:188     <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 216:20      [_getEncryptionKey]
+packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 232:63      <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/flutter_secure_storage_web/flutter_secure_storage_web.dart.js 247:20      write
+packages/flutter_secure_storage/flutter_secure_storage.dart.js 278:56              <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/flutter_secure_storage/flutter_secure_storage.dart.js 288:20              write
+packages/my_app/core/services/storage_service.dart.js 253:86                       <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 541:3                 _asyncStartSync
+packages/my_app/core/services/storage_service.dart.js 261:20                       saveAccessToken
+packages/my_app/features/auth/presentation/providers/auth_provider.dart.js 170:71  <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 503:7                 complete
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 570:12                _asyncReturn
+packages/my_app/features/auth/data/repositories/auth_repository.dart.js 182:28     <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 503:7                 complete
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 570:12                _asyncReturn
+packages/my_app/features/auth/data/datasources/auth_api_service.dart.js 70:28      <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 503:7                 complete
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 570:12                _asyncReturn
+packages/dio/src/interceptors/log.dart.js 1683:28                                  <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 622:19                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 647:23                <fn>
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 593:31                <fn>
+dart-sdk/lib/async/zone.dart 1849:54                                               runUnary
+dart-sdk/lib/async/future_impl.dart 224:18                                         handleValue
+dart-sdk/lib/async/future_impl.dart 951:44                                         handleValueCallback
+dart-sdk/lib/async/future_impl.dart 980:13                                         _propagateToListeners
+dart-sdk/lib/async/future_impl.dart 723:5                                          [_completeWithValue]
+dart-sdk/lib/async/future_impl.dart 807:7                                          callback
+dart-sdk/lib/async/schedule_microtask.dart 40:11                                   _microtaskLoop
+dart-sdk/lib/async/schedule_microtask.dart 49:5                                    _startMicrotaskLoop
+dart-sdk/lib/_internal/js_dev_runtime/private/ddc_runtime/operations.dart 117:77   tear
+dart-sdk/lib/_internal/js_dev_runtime/patch/async_patch.dart 186:7                 <fn>
+
+js_primitives.dart:28 🔄 Router redirect: location=/splash, isLoggedIn=false, isLoading=false
+js_primitives.dart:28 🚀 Router: Staying on splash screen
+js_primitives.dart:28 🔑 StorageService: Getting access token - found: false
+js_primitives.dart:28 🔄 Router redirect: location=/login, isLoggedIn=false, isLoading=false
+js_primitives.dart:28 ✅ Router: No redirect needed

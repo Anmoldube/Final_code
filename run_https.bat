@@ -1,0 +1,3 @@
+@echo off
+echo Starting Flutter web server with HTTPS...
+flutter run -d web-server --web-hostname 0.0.0.0 --web-port 3000 --web-tls-cert-path cert.pem --web-tls-cert-key-path key.pem

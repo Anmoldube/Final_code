@@ -1,0 +1,5 @@
+export default class Logger {
+    static info(...args: any[]): void;
+    static error(...args: any[]): void;
+    static warn(...args: any[]): void;
+}

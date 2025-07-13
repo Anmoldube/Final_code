@@ -1,0 +1,17 @@
+{
+  "name": "flutter-web-server",
+  "version": "1.0.0",
+  "description": "Simple HTTP server for Flutter web app",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "build": "flutter build web && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5"
+  },
+  "devDependencies": {},
+  "author": "",
+  "license": "ISC"
+}

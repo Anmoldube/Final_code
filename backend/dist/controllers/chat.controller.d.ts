@@ -1,0 +1,12 @@
+import { Request, Response } from "express";
+import { ProtectedRequest } from "../types/app-request";
+declare const searchAvailableusers: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const createOrGetExistingChat: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const getCurrentUserChats: (req: ProtectedRequest, res: Response) => Promise<Response<any, Record<string, any>>>;
+declare const createGroupChat: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const getGroupChatDetails: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const addNewUserToGroup: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const deleteChat: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const getConversations: (req: Request, res: Response, next: import("express").NextFunction) => void;
+declare const markConversationAsRead: (req: Request, res: Response, next: import("express").NextFunction) => void;
+export { searchAvailableusers, createOrGetExistingChat, getCurrentUserChats, createGroupChat, getGroupChatDetails, addNewUserToGroup, deleteChat, getConversations, markConversationAsRead, };

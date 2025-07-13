@@ -1,0 +1,14 @@
+{
+    "zencoder.enableRepoIndexing": true,
+    "git.ignoreLimitWarning": true,
+    "cSpell.words": [
+        "ADRDE",
+        "Encrypter",
+        "msword",
+        "officedocument",
+        "openxmlformats",
+        "prefs",
+        "webp",
+        "wordprocessingml"
+    ]
+}
